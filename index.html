@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" style="scroll-behavior: smooth;">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="LearnSparks is your go-to platform for online programming courses like Python, C, Web Development, and more.">
+  <meta name="keywords" content="LearnSparks, online learning, programming, Python, Web Development, C Programming">
+  <title>LearnSparks | Home</title>
+
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&display=swap" rel="stylesheet" />
+
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="common.css" />
+  <link rel="stylesheet" href="Styles.css" />
+  <link rel="stylesheet" href="responsive.css" />
+
+  <!-- JS Files -->
+  <script src="script.js" defer></script>
+  <script src="search.js" defer></script>
+  <script src="homeburger.js" defer></script>
+  <script src="typed.js" defer></script>
+
+
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="main-header">
+  <div class="header-top">
+    <div class="logo-title">
+      <a href="index.html" class="logo-link">
+        <img src="Logo.png" alt="LearnSparks Logo" class="logo" />
+        <span class="site-title">LearnSparks</span>
+      </a>
+    </div>
+
+    <div class="auth-buttons">
+      <a href="login.html" class="btn-secondary">Login</a>
+      <a href="register.html" class="btn-primary">Register</a>
+    </div>
+  </div>
+    <!-- Navigation -->
+    <nav class="navbar" aria-label="Main Navigation">
+      <!-- Mobile Menu Toggle -->
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navLinks">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <!-- Navigation Links -->
+      <ul class="nav-links" id="navLinks" role="menubar">
+        <li role="none"><a role="menuitem" href="index.html" tabindex="0">Home</a></li>
+        
+        <!-- Dropdown Menu -->
+        <li class="dropdown" role="none">
+          <button class="dropdown-btn" aria-haspopup="true" aria-expanded="false" aria-controls="coursesDropdown" role="menuitem" tabindex="0">
+            Courses <i class="fas fa-caret-down"></i>
+          </button>
+          <ul class="dropdown-menu" id="coursesDropdown" role="menu" aria-label="Courses submenu">
+            <li role="none"><a role="menuitem" href="python.html" tabindex="-1">Python</a></li>
+            <li role="none"><a role="menuitem" href="web-development.html" tabindex="-1">Web Development</a></li>
+            <li role="none"><a role="menuitem" href="Data-Structure-Algorithm.html" tabindex="-1">Data Structure</a></li>
+            <li role="none"><a role="menuitem" href="c-programming.html" tabindex="-1">C Programming</a></li>
+             <li role="none"><a role="menuitem" href="data-science.html" tabindex="-1">Data Science</a></li>
+
+          </ul>
+        </li>
+
+        <li role="none"><a role="menuitem" href="#blog" tabindex="0">Blog Post</a></li>
+        <li role="none"><a role="menuitem" href="#about" tabindex="0">About</a></li>
+        <li role="none"><a role="menuitem" href="#contact" tabindex="0">Contact</a></li>
+      </ul>
+
+      <!-- Right Side (Search Bar) -->
+      <div class="nav-right">
+        <form class="search-form" role="search" aria-label="Search courses form">
+          <label for="searchInput" class="sr-only">Search Courses</label>
+          <input type="text" id="searchInput" placeholder="Search courses..." aria-label="Search courses" />
+          <button type="submit" aria-label="Submit search"><i class="fas fa-search"></i></button>
+        </form>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Tagline -->
+  <p class="page-tagline">Empowering the future through education</p>
+
+
+  <!-- ===== Hero Section ===== -->
+<section class="hero"><div class="scroll-down">
+  <span>&#x25BC;</span>
+</div>
+
+    <video autoplay muted loop playsinline class="hero-video">
+    <source src="intro.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <p class="Welcome-text"></p>
+  <p class="typing-text"></p>
+  
+  <div class="image-scroll-container">
+    <div class="image-scroll">
+      <img src="images/coding1.png" alt="Coding Image 1" />
+      <img src="images/coding2.png" alt="Coding Image 2" />
+      <img src="images/coding3.png" alt="Coding Image 3" />
+      <img src="images/coding4.png" alt="Coding Image 4" />
+      <img src="images/coding5.png" alt="Coding Image 5" />
+      <!-- Repeat images for seamless scroll -->
+      <img src="images/coding1.png" alt="Coding Image 1" />
+      <img src="images/coding2.png" alt="Coding Image 2" />
+      <img src="images/coding3.png" alt="Coding Image 3" />
+      <img src="images/coding4.png" alt="Coding Image 4" />
+      <img src="images/coding5.png" alt="Coding Image 5" />
+    </div>
+  </div>
+  <div class="hero-wave">
+  <svg viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,160L48,170.7C96,181,192,203,288,197.3C384,192,480,160,576,144C672,128,768,128,864,138.7C960,149,1056,171,1152,160C1248,149,1344,107,1392,85.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+</div>
+
+</section>
+
+
+  <!-- ===== Courses Section ===== -->
+  <section class="section courses" id="courses">
+    <h2>📚 Our Courses</h2>
+    <div class="course-grid">
+      <div class="course-card">
+        <h3><i class="fas fa-code"></i> <a href="c-programming.html">C Programming</a></h3>
+        <p>Learn the basics of programming using C language.</p>
+      </div>
+      <div class="course-card">
+        <h3><i class="fab fa-html5"></i> <a href="web-development.html">Web Development</a></h3>
+        <p>Master HTML, CSS, JavaScript and build modern web apps.</p>
+      </div>
+      <div class="course-card">
+        <h3><i class="fas fa-chart-line"></i> <a href="Data-Structure-Algorithm.html">Data Structure</a></h3>
+       <p>Master data structures and algorithms through practical examples.</p>
+
+      </div>
+      <div class="course-card">
+        <h3><i class="fab fa-python"></i> <a href="python.html">Python</a></h3>
+        <p>Get started with Python programming for AI & ML.</p>
+      </div>
+        <div class="course-card">
+        <h3><i class="fas fa-database"></i> <a href="data-science.html">Data Science</a></h3>
+        <p>Dive into data science concepts, tools, and real-world applications.</p>
+  </div>
+    </div>
+  </section>
+
+  <!-- ===== Blog Section ===== -->
+  <section class="section blog" id ="blog">
+    <h2>📝 Latest Blog Posts</h2>
+    <ul class="blog-list">
+      <ul class="blog-list">
+  <li><a href="blog/python-projects.html">Top 5 Python Projects for Beginners</a></li>
+  <li><a href="blog/why-learn-c.html">Why Learning C is Still Important in 2025</a></li>
+  <li><a href="blog/web-trends.html">Web Development Trends You Should Know</a></li>
+  <li><a href="blog/gitgithub.html">Mastering Git & GitHub for Developers</a></li>
+  <li><a href="blog/frontendvsbackend.html">Complete Full-Stack Developer Roadmap</a></li>
+  <li><a href="blog/competitive-programming.html">How to Start Competitive Programming</a></li>
+  <li><a href="blog/aiineducation.html">Artificial Intelligence in education</a></li>
+  <li><a href="blog/dsvsml.html">Data Science vs machine Learning: What's the Difference?</a></li>
+</ul>
+
+    </ul>
+  </section>
+
+  <!-- ===== About Section ===== -->
+
+<section class="section about parallax-about" id="about">
+  <div class="about-container">
+    <h2>👨‍🏫 About Us</h2>
+    <p><strong>LearnSparks</strong> is an online learning platform dedicated to making quality education accessible to everyone — whether you're a beginner or an advanced learner. Our goal is to empower students through practical, project-based learning in programming, web development, data science, and more.</p>
+
+    <p><strong>About the Founder:</strong> My name is <strong>Ankit Raj</strong>, and I am the founder of LearnSparks. I hail from <strong>Nalanda district, Bihar</strong>, and have completed my B.Tech in Computer Science and Engineering from <strong>Lok Nayak Jai Prakash Institute of Technology, Chhapra</strong>.</p>
+
+    <p>As a passionate programmer and educator, I started LearnSparks to bridge the gap between theory and real-world skills. I believe in learning by building, and LearnSparks is my effort to share that vision with learners across the country and beyond.</p>
+
+    <div class="founder-image">
+      <img src="images/Ankit-raj.jpeg" alt="Ankit Raj - Founder of LearnSparks" />
+    </div>
+
+    <blockquote class="founder-quote">
+      "Education is the most powerful tool to spark change — let's learn, build, and grow together." – Ankit Raj
+    </blockquote>
+  </div>
+</section>
+
+
+  <!-- ===== Contact Section ===== -->
+  <section class="section contact" id="contact">
+    <h2>📬 Contact Us</h2>
+    <p>We'd love to hear from you! Fill out the form below to get in touch.</p>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required />
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required />
+
+      <label for="message">Your Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Type your message here" required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <p>&copy; 2025 LearnSparks. All rights reserved.</p>
+    <a href="#" aria-label="Back to top" class="back-to-top">Back to Top</a>
+  </footer>
+</body>
+</html>

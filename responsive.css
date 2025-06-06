@@ -1,0 +1,222 @@
+/* responsive.css - Responsive improvements for LearnSparks */
+
+/* Padding adjustment on tablets and smaller */
+@media (max-width: 1024px) {
+  .header-container,
+  .course-grid,
+  .course-container {
+    padding: 0 15px;
+  }
+}
+
+/* Tablet layout adjustments */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-left,
+  .nav-right {
+    width: 100%;
+    justify-content: space-between;
+    margin: 10px 0;
+  }
+
+  .nav-right {
+    margin-left: 0;
+    justify-content: center;
+    margin-top: 10px;
+  }
+
+  .nav-links {
+    display: none; /* default hidden on mobile */
+    flex-direction: column;
+    width: 100%;
+    background: #fff;
+    border-top: 1px solid #ccc;
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.4s ease, opacity 0.3s ease;
+  }
+
+  .nav-links.show {
+    display: flex;
+    max-height: 500px; /* enough height to fit all items */
+    opacity: 1;
+  }
+
+  .nav-links li {
+    width: 100%;
+    padding: 10px 15px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .nav-links li a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .search-form {
+    width: 100%;
+    max-width: 300px;
+    justify-content: center;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .scrolling-text {
+    font-size: 14px;
+  }
+
+  .course-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .course-card {
+    font-size: 15px;
+  }
+
+  form {
+    padding: 20px;
+  }
+
+  /* Hamburger menu toggle visible on mobile */
+  .menu-toggle {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #1b221f;
+  }
+}
+
+/* Hide hamburger menu on desktop */
+.menu-toggle {
+  display: none;
+}
+
+/* Small phones and below */
+@media (max-width: 480px) {
+  .site-title {
+    font-size: 20px;
+  }
+
+  .hero h1 {
+    font-size: 22px;
+  }
+
+  .course-card h3 {
+    font-size: 18px;
+  }
+
+  .course-card p,
+  input,
+  textarea,
+  button {
+    font-size: 14px;
+  }
+
+  .page-tagline {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 10px;
+  }
+}
+.menu-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* Make nav-links vertical in mobile (you might already have this) */
+.nav-links {
+  flex-direction: column;
+  width: 100%;
+  background: #f0eded;
+  border-top: 1px solid #f7f0f0;
+  margin-top: 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+
+.nav-links.show {
+  max-height: 500px; /* show expanded menu */
+}
+
+/* Dropdown styles inside mobile menu */
+.nav-links li.dropdown {
+  width: 100%;
+}
+
+/* Style dropdown button inside mobile menu */
+.nav-links li.dropdown > button {
+  width: 100%;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 12px 15px;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between; /* to separate text and arrow icon */
+  align-items: center;
+}
+
+/* Add a simple arrow after the button text */
+.nav-links li.dropdown > button::after {
+  content: '\25BC'; /* down arrow */
+  font-size: 12px;
+  transition: transform 0.3s ease;
+}
+
+/* Dropdown submenu hidden by default */
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  padding-left: 20px;
+  background: #fafafa;
+}
+
+/* When dropdown is active/show, show submenu */
+.nav-links li.dropdown.open > .dropdown-menu {
+  display: flex;
+}
+
+/* Dropdown submenu links */
+.dropdown-menu li a {
+  padding: 10px 15px;
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid #eee;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #e28335;
+  color: white;
+}
+
+  .menu-toggle {
+    display: block;
+    /* other styles */
+  }
+}
+/* Disable scroll when menu is open */
+body.menu-open {
+  overflow: hidden;
+  height: 100vh;
+}
+
+@media (max-width: 600px) {
+  .platform-card {
+    width: 100%;
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,75 @@
+.course-container {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.overview p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.modules ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.modules li {
+  background: #e0f7fa;
+  margin: 10px 0;
+  padding: 12px 15px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.playlist {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.playlist h2 {
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.video {
+  flex: 1 1 320px;
+  max-width: 360px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.video:hover {
+  transform: translateY(-5px);
+  transition: cubic-bezier(5px);
+}
+
+.video h3 {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: #2d3436;
+}
+
+.video iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+  border-radius: 6px;
+}
+
+.cta {
+  text-align: center;
+}
