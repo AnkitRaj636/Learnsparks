@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Frontend vs Backend: What's the Difference? | LearnSparks</title>
+  <link rel="stylesheet" href="../common.css" />
+  <link rel="stylesheet" href="blog.css" />
+   <script src="comment.js" defer></script>
+</head>
+<body>
+
+<header class="main-header">
+  <a href="../index.html" class="logo-link">
+    <img src="../Logo.png" alt="LearnSparks Logo" class="logo" />
+    <span class="site-title">LearnSparks</span>
+  </a>
+</header>
+<br><br>
+<main class="blog-content container animate-fade-in">
+  <h1>🧩 Frontend vs Backend: What’s the Difference?</h1>
+  <p class="blog-meta">By Ankit Raj | June 2025</p>
+  <img src="../images/frontend-backend.jpg" alt="Frontend vs Backend" class="blog-image" />
+
+  <p>Understanding the difference between frontend and backend development is crucial when starting your programming journey.</p>
+
+  <h2>🎨 Frontend</h2>
+  <p>This is everything users see and interact with — built using HTML, CSS, and JavaScript.</p>
+
+  <h2>⚙️ Backend</h2>
+  <p>This is the engine behind the curtain — databases, APIs, server logic using Python, Node.js, PHP, etc.</p>
+
+  <h2>🛠️ Full Stack</h2>
+  <p>A full-stack developer handles both frontend and backend responsibilities.</p>
+
+  <blockquote>"Frontend is what users see. Backend is what powers it. Full stack is the bridge." – Ankit Raj</blockquote>
+</main>
+
+<section class="comment-section container animate-fade-in">
+  <h2>Leave a Comment</h2>
+  <form class="comment-form" onsubmit="event.preventDefault(); showComment();">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <textarea id="comment" placeholder="Your Comment" required></textarea>
+    <button type="submit">Post Comment</button>
+  </form>
+  <div id="comment-box" class="posted-comment hidden">
+    <p><strong id="userName"></strong> says:</p>
+    <p id="userComment"></p>
+  </div>
+</section>
+
+
+<footer>
+  <p>&copy; 2025 LearnSparks. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

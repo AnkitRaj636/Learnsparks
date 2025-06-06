@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Development Trends You Should Know | LearnSparks</title>
+  <link rel="stylesheet" href="../common.css" />
+  <link rel="stylesheet" href="blog.css" />
+   <script src="comment.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<header class="main-header">
+  <div class="container">
+    <a href="../index.html" class="logo-link">
+      <img src="../Logo.png" alt="LearnSparks Logo" class="logo" />
+      <span class="site-title">LearnSparks</span>
+    </a>
+  </div>
+</header>
+<br><br>
+<main class="blog-content container animate-fade-in">
+  <h1>🌐 Web Development Trends You Should Know</h1>
+  <p class="blog-meta">By Ankit Raj | June 5, 2025</p>
+  <img src="../images/web-trends-banner.jpg" alt="Web Development Trends 2025" class="blog-image" />
+
+  <p>Web development is an ever-evolving field. Each year brings new tools, frameworks, and practices that shape how we build and experience websites and apps. Here are some trends every developer should keep an eye on in 2025.</p>
+
+  <h2>⚛️ Jamstack & Static Site Generators</h2>
+  <p>Performance and security are top priorities. Jamstack architecture is gaining popularity for decoupling frontend from backend using static site generators like Next.js or Astro.</p>
+
+  <h2>🎨 AI-Assisted Design & Coding</h2>
+  <p>AI tools like GitHub Copilot and Figma AI are streamlining both design and development. They accelerate prototyping, code suggestions, and bug detection.</p>
+
+  <h2>📱 Mobile-First & Responsive Enhancements</h2>
+  <p>With mobile users dominating the web, responsive design is more important than ever. CSS container queries and advanced flex/grid techniques are helping developers create seamless experiences.</p>
+
+  <h2>🧠 Accessibility & Core Web Vitals</h2>
+  <p>Google continues to emphasize accessibility and performance. Developers are focusing on semantic HTML, ARIA roles, and optimizing for faster load times and interactivity.</p>
+
+  <blockquote>
+    “The best way to predict the future is to create it.” – Alan Kay
+  </blockquote>
+</main>
+
+<!-- Comment Section -->
+<section class="comment-section container animate-fade-in">
+  <h2>Leave a Comment</h2>
+  <form class="comment-form" onsubmit="event.preventDefault(); showComment();">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <textarea id="comment" placeholder="Your Comment" required></textarea>
+    <button type="submit">Post Comment</button>
+  </form>
+
+  <div id="comment-box" class="posted-comment hidden">
+    <p><strong id="userName"></strong> says:</p>
+    <p id="userComment"></p>
+  </div>
+</section>
+
+
+
+
+<footer>
+  <p>&copy; 2025 LearnSparks. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

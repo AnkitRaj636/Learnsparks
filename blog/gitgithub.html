@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Beginner's Guide to Git & GitHub | LearnSparks</title>
+  <link rel="stylesheet" href="../common.css" />
+  <link rel="stylesheet" href="blog.css" />
+   <script src="comment.js" defer></script>
+</head>
+<body>
+
+<header class="main-header">
+  <a href="../index.html" class="logo-link">
+    <img src="../Logo.png" alt="LearnSparks Logo" class="logo" />
+    <span class="site-title">LearnSparks</span>
+  </a>
+</header>
+<br><br>
+<main class="blog-content container animate-fade-in">
+  <h1>🛠️ Beginner’s Guide to Git & GitHub</h1>
+  <p class="blog-meta">By Ankit Raj | June 2025</p>
+  <img src="../images/git-github.jpg" alt="Git and GitHub" class="blog-image" />
+
+  <p>Git and GitHub are essential tools for developers. Here's what you need to know to get started.</p>
+
+  <h2>🔄 What is Git?</h2>
+  <p>Git is a version control system that tracks changes in your codebase and helps you collaborate with others.</p>
+
+  <h2>🌐 What is GitHub?</h2>
+  <p>GitHub is a hosting platform for Git repositories. It allows you to share your work, contribute to projects, and manage issues.</p>
+
+  <h2>🧪 Common Commands</h2>
+  <ul>
+    <li><code>git init</code> – start a repo</li>
+    <li><code>git add</code> – stage changes</li>
+    <li><code>git commit</code> – save a snapshot</li>
+    <li><code>git push</code> – upload to GitHub</li>
+  </ul>
+
+  <blockquote>"Learning Git early saves hours later." – Ankit Raj</blockquote>
+</main>
+
+<section class="comment-section container animate-fade-in">
+  <h2>Leave a Comment</h2>
+  <form class="comment-form" onsubmit="event.preventDefault(); showComment();">
+    <input type="text" id="name" placeholder="Your Name" required />
+    <textarea id="comment" placeholder="Your Comment" required></textarea>
+    <button type="submit">Post Comment</button>
+  </form>
+  <div id="comment-box" class="posted-comment hidden">
+    <p><strong id="userName"></strong> says:</p>
+    <p id="userComment"></p>
+  </div>
+</section>
+
+
+
+<footer>
+  <p>&copy; 2025 LearnSparks. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
